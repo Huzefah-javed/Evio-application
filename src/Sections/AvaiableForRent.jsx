@@ -3,8 +3,8 @@ import { SkeletonLoader } from "../Components/skeletonLoader";
 export const AvailableForRent = () => {
   return (
     <div>
-      <div class="flex flex-col justify-center items-center w-full">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      <div class="flex flex-col justify-center items-center p-2 w-full">
+        <h1 class="sm:text-4xl md:text-6xl text-3xl font-bold mb-6">
           <span class="textLinearGrd">Available</span> For Rent
         </h1>
         <h2 class="mt-4 md:max-w-[70%] text-center mb-6">

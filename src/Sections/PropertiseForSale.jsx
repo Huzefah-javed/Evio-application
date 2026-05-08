@@ -3,8 +3,8 @@ import { SkeletonLoader } from "../Components/skeletonLoader";
 export const PropertiesForSale = () => {
   return (
     <div>
-      <div class="flex flex-col justify-center items-center w-full">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      <div class="flex flex-col justify-center items-center w-full p-2">
+        <h1 class="sm:text-4xl md:text-6xl text-3xl font-bold mb-6">
           Properties <span class="textLinearGrd">For Sale</span>
         </h1>
         <h2 class="mt-4 md:max-w-[70%] text-center mb-6">

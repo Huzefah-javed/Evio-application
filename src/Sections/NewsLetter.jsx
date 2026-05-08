@@ -1,7 +1,7 @@
 export const NewsLetter = () => {
   return (
-    <section class="p-8 items-center mt-6">
-      <div className="CardBg flex flex-col md:flex-row items-center justify-between rounded-4xl p-10">
+    <section class="md:p-8 p-4 items-center mt-6">
+      <div className="CardBg flex flex-col md:flex-row items-center justify-between rounded-4xl md:p-10 p-5">
         <div className="flex-1 flex flex-col w-full gap-5 p-4">
           <div className="mb-6 w-full">
             <img src="/logo.png" alt="" className="lg:w-24 md:w-20 w-16" />
@@ -87,23 +87,23 @@ export const NewsLetter = () => {
           </div>
         </div>
         <div className="flex-1 flex justify-center items-center">
-          <div className="overflow-hidden  borderAnimation p-8">
-            <div className="md:p-8 p-3 w-full h-full flex flex-col justify-evenly items-start">
-              <h1 className="textLinearGrd font-bold sm:text-4xl text-2xl relative z-10">
+          <div className="overflow-hidden  borderAnimation">
+            <div className="md:p-8 p-1 w-full h-full flex flex-col justify-evenly items-start ">
+              <h1 className="textLinearGrd font-bold sm:text-4xl text-2xl relative z-10 mt-4 mx-2">
                 Subscribe to Our Newsletter
               </h1>
-              <p className="text-white text-[0.75rem] sm:text-[1rem] relative z-10 mt-6">
+              <p className="text-white text-[0.75rem] sm:text-[1rem] relative z-10 mt-6 mx-2">
                 Stay updated with the latest property listings, market insights,
                 and expert tips. Get valuable real estate knowledge delivered
                 straight to your inbox.
               </p>
-              <form className="relative z-10 w-full flex justify-center items-center gap-5 mt-6">
+              <form className="relative z-10 w-full flex justify-center items-center md:gap-5 gap-2 p-3 mt-6 mx-1">
                 <input
                   className="relative z-10 bg-white sm:p-3 p-1 rounded-full flex-3 outline-none"
                   placeholder="Enter Your Email"
                   type="text"
                 />
-                <button className="relative z-10 py-3 px-4 text-white flex-1 rounded-full linearGrd">
+                <button className="relative z-10 md:py-3 md:px-4 px-1.5 py-2 text-white flex-1 rounded-full linearGrd">
                   Send
                 </button>
               </form>

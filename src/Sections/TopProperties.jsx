@@ -2,8 +2,8 @@ import { SkeletonLoader } from "../Components/skeletonLoader";
 
 export const TopProperties = () => {
   return (<div>
-        <div class="text-center">
-    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <div class="text-center p-2">
+    <h1 class="sm:text-4xl md:text-6xl text-3xl font-bold mb-6">
     
       <span class="textLinearGrd">Top </span> Properties
     </h1>

@@ -1,12 +1,12 @@
 export const HeroSection = () => {
   return (
-    <div className="h-lvh bg-[url(/hero.jpg)] bg-cover">
+    <div className="min-h-lvh bg-[url(/hero.jpg)] bg-cover">
       <div className="w-full h-full  bg-black/80 flex justify-center items-center">
-        <div className="flex flex-col items-center justify-evenly mt-12 md:p-0 p-4">
+        <div className="flex flex-col items-center justify-evenly sm:mt-12 mt-24 md:p-0 p-4">
           <div className="linearGrd hover:linearGrdRev py-2 px-6 text-white font-medium rounded-full myAnimatePulse mb-6">
             Smart. Reliable. Future-Ready.
           </div>
-          <h1 className="md:text-[4rem] text-4xl font-bold mb-6 text-white text-center md:leading-16 leading-10">
+          <h1 className="md:text-[4rem] sm:text-4xl text-3xl font-bold md:mb-6 mb-3 text-white text-center md:leading-16 leading-10">
             Smart <span class="textLinearGrd"> Real Estate </span> Solutions
             <br /> for Your <span class="textLinearGrd"> Dream Home</span>
           </h1>

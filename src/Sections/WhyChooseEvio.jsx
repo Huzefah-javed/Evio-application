@@ -8,7 +8,7 @@ export const WhyChooseEvio = () => {
          <div className="linearGrd hover:linearGrdRev py-2 px-6 text-white font-medium rounded-full myAnimatePulse mb-3">
             Property Made Simple
           </div>
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <h1 class="sm:text-4xl md:text-6xl text-3xl font-bold mb-6">
           Why Choose <span class="textLinearGrd">Evio</span>
         </h1>
         <h2 class="mt-4 md:max-w-[70%] text-center mb-6">
