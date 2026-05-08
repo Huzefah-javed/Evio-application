@@ -1,7 +1,7 @@
 export const HeroSection = () => {
   return (
-    <div className="min-h-lvh bg-[url(/hero.jpg)] bg-cover">
-      <div className="w-full h-full  bg-black/80 flex justify-center items-center">
+    <div className="min-h-dvh bg-[url(/hero.jpg)] bg-cover">
+      <div className="w-full min-h-dvh  bg-black/80 flex justify-center items-center">
         <div className="flex flex-col items-center justify-evenly sm:mt-12 mt-24 md:p-0 p-4">
           <div className="linearGrd hover:linearGrdRev py-2 px-6 text-white font-medium rounded-full myAnimatePulse mb-6">
             Smart. Reliable. Future-Ready.
