@@ -66,10 +66,10 @@
 .borderAnimation::before {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
   padding:40px;
   background: conic-gradient(    from 0deg,    transparent 0deg,    transparent 270deg,    #fbbf24 315deg,    #fbbf24 360deg  );
   animation: spin 3s linear infinite;

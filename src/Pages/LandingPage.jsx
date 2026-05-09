@@ -13,13 +13,24 @@ import { WhyChooseEvio } from "../Sections/WhyChooseEvio";
 export const LandingPage = () => {
   return (
     <>
-      <HeroSection />
+      <HeroSection
+        Heading={
+          <h1 className="md:text-[4rem] sm:text-4xl text-3xl font-bold md:mb-6 mb-3 text-white text-center md:leading-16 leading-10">
+            Smart <span class="textLinearGrd"> Real Estate </span> Solutions
+            <br /> for Your <span class="textLinearGrd"> Dream Home</span>
+          </h1>
+        }
+        para="Buy, sell, or rent properties with ease. Evio connects you to trusted real estate listings, modern homes, and top investment opportunities."
+        buttonText="Browse Properties"
+        blinkerText="Smart. Reliable. Future-Ready"
+        bgLink="/hero.jpg"
+      />
       <WhoWeAre />
-      < TopProperties/>
-      < PropertiesForSale/>
-      <AvailableForRent/>
+      <TopProperties />
+      <PropertiesForSale />
+      <AvailableForRent />
       <DreamPropertyCard />
       <WhyChooseEvio />
-      </>
+    </>
   );
 };
