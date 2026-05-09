@@ -23,7 +23,7 @@ export const LandingPage = () => {
         para="Buy, sell, or rent properties with ease. Evio connects you to trusted real estate listings, modern homes, and top investment opportunities."
         buttonText="Browse Properties"
         blinkerText="Smart. Reliable. Future-Ready"
-        bgLink="/hero.jpg"
+        bgLink="/hero.webp"
       />
       <WhoWeAre />
       <TopProperties />

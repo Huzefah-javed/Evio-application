@@ -10,70 +10,70 @@ export const Services = () => {
       title: "Sales",
       description:
         "We provide expert guidance in buying and selling premium properties, with solutions tailored to your specific goals.",
-      bgLink: "/sales.jpg",
+      bgLink: "/sales.webp",
     },
     {
       id: 2,
       title: "Lettings",
       description:
         "Our comprehensive letting services ensure seamless experiences for landlords and tenants, prioritizing efficiency and satisfaction.",
-      bgLink: "/lettings.jpg",
+      bgLink: "/lettings.webp",
     },
     {
       id: 3,
       title: "Developments / New-builds",
       description:
         "We offer specialist support for new developments, overseeing everything from initial planning to a successful market launch.",
-      bgLink: "/specialized.jpg",
+      bgLink: "/specialized.webp",
     },
     {
       id: 4,
       title: "Commercial",
       description:
         "Our strategic commercial real estate services are designed to optimize your investment returns, leveraging market insights and expertise.",
-      bgLink: "/sales.jpg",
+      bgLink: "/sales.webp",
     },
     {
       id: 5,
       title: "Buying agent service",
       description:
         "Navigating the complexities of real estate investment requires expert guidance, strategic insight, and local market knowledge.",
-      bgLink: "/expertGuide.jpg",
+      bgLink: "/expertGuide.webp",
     },
     {
       id: 6,
       title: "Relocation Services",
       description:
         "We offer customized relocation solutions for individuals and businesses, ensuring smooth and efficient transitions across the globe.",
-      bgLink: "/Relocation.jpg",
+      bgLink: "/Relocation.webp",
     },
     {
       id: 7,
       title: "Management",
       description:
         "Our full-spectrum property management services provide peace of mind, focusing on maximizing long-term value and hassle-free ownership.",
-      bgLink: "/managment.jpg",
+      bgLink: "/managment.webp",
     },
     {
       id: 8,
       title: "Private Office",
       description:
         "We deliver exclusive real estate advisory services for high-net-worth individuals, offering bespoke investment strategies and personalized attention.",
-      bgLink: "/resident.jpg",
+      bgLink: "/resident.webp",
     },
     {
       id: 9,
       title: "Interior Design / Architecture",
       description:
         "Our transformative interior design and architectural services bring spaces to life, combining aesthetics and functionality to create stunning environments.",
-      bgLink: "/Interior.jpg",
+      bgLink: "/Interior.webp",
     },
     {
       id: 10,
       title: "Citizenship & Residency Programs",
       description:
         "We guide you through residency and citizenship opportunities through strategic real estate investments, making the process straightforward and effective.",
-      bgLink: "/resident.jpg",
+      bgLink: "/resident.webp",
     },
   ];
 
@@ -83,42 +83,42 @@ export const Services = () => {
       title: "Citizenship & Residency Programs",
       description:
         "We guide you through residency and citizenship opportunities through strategic real estate investments, making the process straightforward and effective.",
-      bgLink: "/citizenship.jpg",
+      bgLink: "/citizenship.webp",
     },
     {
       id: 2,
       title: "Vineyards",
       description:
         "Explore unique investment opportunities in vineyard properties, where we manage everything from the initial acquisition to operational oversight...",
-      bgLink: "/vineyards.jpg",
+      bgLink: "/vineyards.webp",
     },
     {
       id: 3,
       title: "Land",
       description:
         "Our land services cover strategic investments in undeveloped and partially developed land parcels...",
-      bgLink: "/land.jpg",
+      bgLink: "/land.webp",
     },
     {
       id: 4,
       title: "Shopping Malls",
       description:
         "We provide tailored investment and management services for shopping mall properties, including tenant mix optimization...",
-      bgLink: "/malls.jpg",
+      bgLink: "/malls.webp",
     },
     {
       id: 5,
       title: "Agriculture",
       description:
         "Invest in high-potential agricultural land with our expert guidance, from acquisition to sustainable farming management...",
-      bgLink: "/agriculture.jpg",
+      bgLink: "/agriculture.webp",
     },
     {
       id: 6,
       title: "Retail",
       description:
         "Our expertise in retail property investment and management includes market analysis, tenant relations, and asset enhancement.",
-      bgLink: "/Retail.jpg",
+      bgLink: "/Retail.webp",
     },
   ];
   return (
@@ -130,7 +130,7 @@ export const Services = () => {
           </h1>
         }
         para="Our platform offers a seamless experience for buying and renting properties, Weather you are looking for your dream home or wanna rent any existing property"
-        bgLink="/service.jpg"
+        bgLink="/service.webp"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
