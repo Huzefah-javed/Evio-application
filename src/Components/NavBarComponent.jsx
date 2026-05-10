@@ -6,11 +6,11 @@ export const NavbarComponent = () => {
   const [menu, setMenu] = useState(true);
 
   return (
-    <header className="bg-[#001F3F] flex w-full fixed top-0 z-50 justify-between items-center py-4 px-7">
+    <header className="bg-[#001F3F] flex w-full fixed top-0 z-50 justify-between items-center md:px-7 px-3 py-4 ">
       <div className="logo">
         <img src="/logo.png" alt="" className="lg:w-24 md:w-20 w-16" />
       </div>
-      <nav class="hidden md:flex gap-12 tracking-wider font-medium capitalize">
+      <nav class="hidden md:flex md:gap-8 lg:gap-12 tracking-wider font-medium capitalize">
         <Link
           class="hover:text-amber-500 text-white font-medium transition-colors duration-300"
           to="/"
@@ -44,7 +44,7 @@ export const NavbarComponent = () => {
       </nav>
 
       <div
-        class={`absolute top-[75px] left-0 z-40 w-full bg-white shadow-md text-base  font-semibold flex flex-col md:hidden transition-all duration-500 ease-in-out  ${menu ? "invisible opacity-0" : "visible opacity-100"}`}
+        class={`absolute top-[55px] left-0 z-40 w-full bg-white shadow-md text-base  font-semibold flex flex-col md:hidden transition-all duration-500 ease-in-out  ${menu ? "invisible opacity-0" : "visible opacity-100"}`}
       >
         <Link
           class="transition-colors duration-300 h-11 flex items-center border-b border-gray-300 sm:px-10 px-6 w-full"

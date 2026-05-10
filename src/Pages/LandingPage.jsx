@@ -25,7 +25,29 @@ export const LandingPage = () => {
         blinkerText="Smart. Reliable. Future-Ready"
         bgLink="/hero.webp"
       />
-      <WhoWeAre />
+      <WhoWeAre
+        title={
+          <h2 class="text-3xl md:text-5xl font-bold mb-6">
+            Who <span class="textLinearGrd"> We </span> Are
+          </h2>
+        }
+        glitterText={"Trusted Property Partner"}
+        para1={`At Evio Real Estate, we make buying, selling, and renting property
+          simple, smart, and stress-free. Whether you’re a first-time homebuyer
+          searching for your dream home, an investor exploring profitable real
+          estate opportunities, or a family looking to rent a modern apartment,
+          we provide personalized property solutions tailored to your needs.`}
+          para2="Our platform provides verified listings, transparent pricing, and
+          expert guidance to help you make confident real estate decisions. From
+          luxury homes and apartments to commercial properties and rental
+          spaces, Evio connects you with the best opportunities in prime
+          locations—built on trust, innovation, and customer satisfaction."
+          buttonText={"Want to know more"}
+          imgLink={"/whoweare.jpg"}
+          className={"md:p-8 p-5"}
+          flexImg={"flex-1"}
+          flexText={"flex-1"}
+      />
       <TopProperties />
       <PropertiesForSale />
       <AvailableForRent />

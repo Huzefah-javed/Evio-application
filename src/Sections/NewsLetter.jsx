@@ -1,7 +1,7 @@
 export const NewsLetter = () => {
   return (
     <section class="md:p-8 p-4 items-center mt-6">
-      <div className="CardBg flex flex-col md:flex-row items-center justify-between rounded-4xl md:p-10 p-5">
+      <div className="CardBg flex flex-col lg:flex-row gap-8 items-center justify-between rounded-4xl md:p-10 p-5">
         <div className="flex-1 flex flex-col w-full gap-5 p-4">
           <div className="mb-6 w-full">
             <img src="/logo.png" alt="" className="lg:w-24 md:w-20 w-16" />
@@ -64,8 +64,8 @@ export const NewsLetter = () => {
               </svg>
             </button>
           </div>
-          <h2 className="text-amber-500 font-bold my-6">Quick Links</h2>
-          <div className="text-white w-full flex flex-wrap justify-start items-center md:gap-12 gap-8">
+          <h2 className="text-amber-500 font-bold my-3">Quick Links</h2>
+          <div className="text-white w-full flex flex-wrap justify-start items-center md:gap-12 gap-4">
             <a href="/" className="hover:text-amber-500 transition-all">
               Home
             </a>
@@ -97,9 +97,9 @@ export const NewsLetter = () => {
                 and expert tips. Get valuable real estate knowledge delivered
                 straight to your inbox.
               </p>
-              <form className="relative z-10 w-full flex justify-center items-center md:gap-5 gap-2 p-3 mt-6 mx-1">
+              <form className="relative z-10 w-full flex flex-col md:flex-row justify-center md:items-center  gap-2 p-3 mt-6 mx-1">
                 <input
-                  className="relative z-10 bg-white sm:p-3 p-1 rounded-full flex-3 outline-none"
+                  className="relative z-10 bg-white sm:p-3 p-3 rounded-full flex-3 outline-none"
                   placeholder="Enter Your Email"
                   type="text"
                 />

@@ -125,15 +125,16 @@ export const Services = () => {
     <div>
       <HeroSection
         Heading={
-          <h1 className="md:text-[4rem] sm:text-4xl text-3xl font-bold md:mb-6 mb-3 text-white text-center md:leading-16 leading-10">
+          <h1 className="md:text-[4rem]  sm:text-4xl sm:mt-24 text-3xl font-bold md:mb-6 mb-3 text-white text-center md:leading-16 leading-10">
             Our <span class="textLinearGrd"> Services </span>
           </h1>
         }
         para="Our platform offers a seamless experience for buying and renting properties, Weather you are looking for your dream home or wanna rent any existing property"
         bgLink="/service.webp"
+        height="h-fit"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-8 pt-4">
         {servicesData.map((service) => (
            <InfoCard
             id={service.id}
@@ -144,7 +145,7 @@ export const Services = () => {
         ))}
       </div>
       <CTA />
-      <div className="p-8">
+      <div className="px-8 py-2">
         <h1 class="sm:text-4xl md:text-6xl text-3xl w-full text-center font-bold mb-6">
           Our <span class="textLinearGrd">Sectors</span> 
         </h1>

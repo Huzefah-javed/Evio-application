@@ -2,8 +2,8 @@ import { Users } from "lucide-react"; // Standard icon library
 
 export const CTA = () => {
   return (
-    <div className="max-w-7xl mx-auto p-8">
-      <div className="CardBg rounded-2xl p-4 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div className="w-full p-4">
+      <div className="CardBg rounded-2xl p-4 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex items-center gap-5">
           <div className="linearGrd p-4 rounded-full shadow-sm flex items-center justify-center">
             <Users size={24} className="text-white" />
