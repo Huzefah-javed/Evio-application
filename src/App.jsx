@@ -3,7 +3,7 @@ import { LandingPage } from "./Pages/LandingPage";
 import { Layout } from "./layout/Layout";
 import { About } from "./Pages/About";
 import { Services } from "./Pages/Services";
-import { Contacts } from "./Pages/Contact";
+import { ContactUs } from "./Pages/Contact";
 import { Blogs } from "./Pages/Blogs";
 import { Properties } from "./Pages/Properties";
 
@@ -16,7 +16,7 @@ function App() {
         { path: "/", element: <LandingPage /> },
         { path: "/about", element: <About /> },
         { path: "/services", element: <Services /> },
-        { path: "/contact", element: <Contacts /> },
+        { path: "/contact", element: <ContactUs /> },
         { path: "/blogs", element: <Blogs /> },
         { path: "/properties", element: <Properties /> },
       ],
