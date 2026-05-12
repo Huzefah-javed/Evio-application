@@ -2,14 +2,35 @@ import { useParams } from "react-router-dom";
 import { blogDetails } from "../blog/detail.js";
 import { User, Calendar, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const BlogDetail = () => {
   const { blogId } = useParams();
+
+  const [activeId, setActiveId] = useState("");
   const blog = blogDetails[blogId];
   const subTopic = useRef(null);
 
+  const handleObserver = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setActiveId(entry.target.id);
+      }
+    });
+  };
 
+  useEffect(() => {
+  
+
+    const observer = new IntersectionObserver(handleObserver,{threshold:1});
+
+    const sections = document.querySelectorAll("h2[id]");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, [blogId]);
 
   if (!blog) {
     return (
@@ -20,7 +41,7 @@ export const BlogDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white scroll-smooth">
       <div className="w-full h-[400px] relative">
         <img
           src={blog.headerImage}
@@ -46,12 +67,18 @@ export const BlogDetail = () => {
                 </h3>
                 <nav className="space-y-4">
                   {blog.fullContent.map((section) => (
-                    <button
+                    <a
                       key={section.id}
-                      className="block text-left text-sm text-gray-500 hover:text-amber-600 transition-colors font-medium border-l-2 border-transparent hover:border-amber-500 pl-3 w-full"
+                      href={`#${section.id}`}
+                      onClick={()=>setActiveId(section.id)}
+                      className={`block text-left text-sm transition-all border-l-2 pl-3 ${
+                        activeId === section.id
+                          ? "text-amber-600 border-amber-600 font-bold"
+                          : "text-gray-500 border-transparent"
+                      }`}
                     >
                       {section.subTitle}
-                    </button>
+                    </a>
                   ))}
                 </nav>
               </div>
@@ -70,12 +97,11 @@ export const BlogDetail = () => {
             <article className="prose prose-lg max-w-none">
               {blog.fullContent.map((section) => (
                 <section
-                  ref={subTopic}
                   key={section.id}
                   id={section.id}
                   className="mb-16 scroll-mt-28"
                 >
-                  <h2 className="text-3xl font-bold text-[#001F3F] mb-6 flex items-center gap-3">
+                  <h2 className="text-3xl font-bold text-[#001F3F] mb-6 flex items-center gap-3" id={section.id}>
                     <span className="w-1.5 h-8 linearGrd rounded-full block"></span>
                     {section.subTitle}
                   </h2>
