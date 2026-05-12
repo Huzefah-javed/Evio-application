@@ -7,9 +7,10 @@ import {
   Building2,
   Fence,
 } from "lucide-react";
+import { Slider,Switch } from "antd";
 
 export const HeroSearch = () => {
-  const [mode, setMode] = useState("buy"); 
+  const [mode, setMode] = useState("buy");
 
   return (
     <div className="relative w-full max-w-6xl mx-auto px-4">
@@ -117,18 +118,18 @@ export const HeroSearch = () => {
             <span className="font-bold text-gray-800">$10K - $250M</span>
           </div>
           <div className="relative w-full h-1.5 bg-gray-200 rounded-full mb-4">
-            <div
-              className="absolute h-full bg-white rounded-full"
-              style={{ left: "10%", right: "20%" }}
-            ></div>
-            <div
-              className="absolute w-4 h-4 linearGrd  rounded-full -top-1.5 shadow-sm"
-              style={{ left: "10%" }}
-            ></div>
-            <div
-              className="absolute w-4 h-4 linearGrd rounded-full -top-1.5 shadow-sm"
-              style={{ right: "20%" }}
-            ></div>
+            <Slider
+        range 
+        // step={10}
+        defaultValue={[10, 250]}
+        min={10}
+        max={250}
+        styles={{
+          track: {
+            background: '#d97706', 
+          },
+        }}
+      />
           </div>
           <div className="flex gap-2">
             <input

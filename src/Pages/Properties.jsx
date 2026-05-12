@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { HeroSection } from "../Sections/HeroSection";
 import { HeroSearch } from "../Components/HeroSearch";
-import { ContactSection } from "../Sections/ContactSection";
 import { AvailableForRent } from "../Sections/AvaiableForRent";
 import { PropertiesForSale } from "../Sections/PropertiseForSale";
 import { TopProperties } from "../Sections/TopProperties";
@@ -19,7 +18,6 @@ export const Properties = () => {
       <PropertiesForSale />
       <AvailableForRent />
 
-      <ContactSection />
     </>
   );
 };

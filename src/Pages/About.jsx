@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import { HeroSection } from "../Sections/HeroSection";
 import { WhoWeAre } from "../Sections/WhoWeAre";
+import { ContactSection } from "../Sections/ContactSection";
 
 export const About = () => {
   return (
     <div>
       <HeroSection
         Heading={
-          <h1 className="md:text-[4rem] sm:text-4xl sm:mt-24 text-3xl font-bold md:mb-6 mb-3 text-white text-center md:leading-16 leading-10">
+          <h1 className="md:text-[4rem] sm:text-4xl md:mt-12 text-3xl font-bold md:mb-6 mb-3 text-white text-center md:leading-16 leading-10">
             <span class="textLinearGrd"> About </span> Us
           </h1>
         }
@@ -107,8 +108,7 @@ export const About = () => {
           imgHeight={"h-full"}
           flexText={"flex-1"}
         />
-
-            </div>
+      </div>
       <section class="py-4  CardBg">
         <div class="text-center  text-white p-2">
           <h2 class="sm:text-3xl md:text-4xl text-2xl font-bold mb-6">
@@ -129,7 +129,7 @@ export const About = () => {
       <h2 class="text-4xl w-full text-center md:text-6xl font-bold mt-6">
         Our<span class="textLinearGrd"> Partners</span>
       </h2>
-      <div className="flex flex-col justify-center items-center px-8 gap-6">
+      <div className="flex flex-col justify-center items-center px-8 pb-14 gap-6">
         <div className={`w-full h-full flex items-center justify-center`}>
           <img
             src={"/partner.png"}
@@ -155,6 +155,8 @@ export const About = () => {
           enduring global foundations.
         </p>
       </div>
+
+      <ContactSection />
     </div>
   );
 };

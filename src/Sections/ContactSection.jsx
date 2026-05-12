@@ -1,9 +1,14 @@
+import { useState } from "react";
+import PhoneInputPkg from "react-phone-input-2";
+const PhoneInput = PhoneInputPkg.default
+  ? PhoneInputPkg.default
+  : PhoneInputPkg;
+import "react-phone-input-2/lib/style.css";
 
 export const ContactSection = () => {
   return (
     <section className="bg-gradient-to-b from-[#001F3F] from-50%  to-white min-h-[600px] flex items-center py-16 md:px-6 px-3">
       <div className="w-full flex md:flex-row flex-col justify-between md:items-start md:gap-16 gap-6">
-        {/* Left Side: Branding */}
         <div className="text-white space-y-4 flex-1">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             <span className="textLinearGrd">EVIO</span>
@@ -15,7 +20,6 @@ export const ContactSection = () => {
 
         <div className="flex-1">
           <div className="overflow-hidden  borderAnimation">
-            {/* Right Side: Contact Form */}
             <div className=" relative z-20 p-6">
               <h2 className="text-2xl textLinearGrd font-bold text-center text-white mb-8">
                 Have Questions?
@@ -38,12 +42,12 @@ export const ContactSection = () => {
                     <label className="block text-sm font-medium text-white mb-1">
                       Phone Number
                     </label>
-                    <div className="flex items-center border bg-white rounded-lg px-3 py-3">
-                      <span className="text-lg mr-2">pk</span>
-                      <span className="mr-2">+92</span>
-                      <input
-                        type="tel"
-                        className="w-full bg-transparent outline-none"
+                    <div>
+                      <PhoneInput
+                        country={"pk"}
+                        inputClass="!w-full !bg-white !px-4 !py-3 !h-auto !rounded-lg !border-none !text-base !pl-12"
+                        buttonClass="!bg-white !border-none !rounded-l-lg hover:!bg-gray-50"
+                        dropdownClass="!rounded-lg !shadow-xl !border-none !w-[16rem]"
                       />
                     </div>
                   </div>

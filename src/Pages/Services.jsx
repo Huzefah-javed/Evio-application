@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { HeroSection } from "../Sections/HeroSection";
 import { CTA } from "../Components/CTA";
 import { InfoCard } from "../Components/InfoCard";
+import { ContactSection } from "../Sections/ContactSection";
 
 export const Services = () => {
   const servicesData = [
@@ -125,7 +126,7 @@ export const Services = () => {
     <div>
       <HeroSection
         Heading={
-          <h1 className="md:text-[4rem]  sm:text-4xl sm:mt-24 text-3xl font-bold md:mb-6 mb-3 text-white text-center md:leading-16 leading-10">
+          <h1 className="md:text-[4rem]  sm:text-4xl md:mt-12 text-3xl font-bold md:mb-6 mb-3 text-white text-center md:leading-16 leading-10">
             Our <span class="textLinearGrd"> Services </span>
           </h1>
         }
@@ -163,6 +164,8 @@ export const Services = () => {
           ))}
         </div>
       </div>
+      
+      <ContactSection />
     </div>
   );
 };
